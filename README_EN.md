@@ -65,7 +65,27 @@ AssetFlow is an enterprise-grade IT Asset Management (ITAM) application for cent
 - MySQL 8+
 - npm / pnpm / yarn
 
-### Steps
+### Quick Setup (Recommended)
+
+A setup script is provided to automate all installation steps:
+
+```bash
+chmod +x setup.sh && ./setup.sh
+```
+
+The script will:
+- Verify Node.js 18+ and detect your package manager
+- Install dependencies (`npm/pnpm/yarn install`)
+- Create the `.env` file and auto-generate `NEXTAUTH_SECRET`
+- Pause until `DATABASE_URL` is configured
+- Generate the Prisma client and run migrations
+- Optionally seed the database (demo categories + admin user)
+
+> **Default admin account** (if seed is selected):
+> - Email: `admin@assetflow.local`
+> - Password: `admin123!` — change this after first login.
+
+### Manual Setup
 
 ```bash
 # 1. Install dependencies

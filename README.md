@@ -65,7 +65,27 @@ AssetFlow, donanım varlıklarını, yazılım lisanslarını ve zimmet kayıtla
 - MySQL 8+
 - npm / pnpm / yarn
 
-### Adımlar
+### Hızlı Kurulum (Önerilen)
+
+Tüm kurulum adımlarını otomatik olarak gerçekleştiren kurulum betiği kullanılabilir:
+
+```bash
+chmod +x setup.sh && ./setup.sh
+```
+
+Betik sırasıyla şunları yapar:
+- Node.js 18+ ve paket yöneticisini kontrol eder
+- Bağımlılıkları yükler (`npm/pnpm/yarn install`)
+- `.env` dosyasını oluşturur ve `NEXTAUTH_SECRET` otomatik üretir
+- `DATABASE_URL` ayarlanana kadar bekler
+- Prisma client üretir ve migrasyonları çalıştırır
+- İsteğe bağlı olarak seed verisi yükler (demo kategoriler + admin kullanıcı)
+
+> **Varsayılan admin hesabı** (seed seçilirse):
+> - E-posta: `admin@assetflow.local`
+> - Şifre: `admin123!` — ilk girişte değiştirilmesi önerilir.
+
+### Manuel Kurulum
 
 ```bash
 # 1. Bağımlılıkları yükle
