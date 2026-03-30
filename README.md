@@ -4,6 +4,18 @@ AssetFlow, donanım varlıklarını, yazılım lisanslarını ve zimmet kayıtla
 
 ---
 
+## Ekran Görüntüleri
+
+| Dashboard | Varlıklar |
+|-----------|-----------|
+| ![Dashboard](screenshots/2.png) | ![Assets](screenshots/1.png) |
+
+| Lisanslar | Zimmetler |
+|-----------|-----------|
+| ![Licenses](screenshots/3.png) | ![Assignments](screenshots/4.png) |
+
+---
+
 ## İçindekiler
 
 1. [Teknoloji Yığını](#teknoloji-yığını)

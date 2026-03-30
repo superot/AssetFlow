@@ -4,6 +4,18 @@ AssetFlow is an enterprise-grade IT Asset Management (ITAM) application for cent
 
 ---
 
+## Screenshots
+
+| Dashboard | Assets |
+|-----------|--------|
+| ![Dashboard](screenshots/2.png) | ![Assets](screenshots/1.png) |
+
+| Licenses | Assignments |
+|----------|-------------|
+| ![Licenses](screenshots/3.png) | ![Assignments](screenshots/4.png) |
+
+---
+
 ## Table of Contents
 
 1. [Tech Stack](#tech-stack)
